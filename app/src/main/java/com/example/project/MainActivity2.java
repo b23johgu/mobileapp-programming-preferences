@@ -21,10 +21,6 @@ public class MainActivity2 extends AppCompatActivity {
         String preferenceValue = myPreferenceRef.getString("preferenceValue", "No preference found.");
 
         TextView prefTextRef = findViewById(R.id.prefText);
-        String preferenceValue = myPreferenceRef.getString("MyAppPreferenceString", "No preference found.");
         prefTextRef.setText(preferenceValue);
-
-        // Log retrieved preference value
-        Log.d("==>", "Retrieved preference value: " + preferenceValue);
     }
 }
