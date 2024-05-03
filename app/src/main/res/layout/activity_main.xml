@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/settingseditview"
         android:layout_marginBottom="340dp"
-        android:onClick="savePref"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,12 +43,14 @@
 
     <TextView
         android:id="@+id/prefText"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778"
-        tools:layout_editor_absoluteX="-16dp" />
+        app:layout_constraintVertical_bias="0.153" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
