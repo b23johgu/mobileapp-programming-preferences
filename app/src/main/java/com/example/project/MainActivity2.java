@@ -16,10 +16,10 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        // Get a reference to the same shared preferences as MainActivity
-        myPreferenceRef = getPreferences(MODE_PRIVATE);
+        myPreferenceRef = getSharedPreferences("myPreferences", MODE_PRIVATE);
 
-        // Display preferences
+        String preferenceValue = myPreferenceRef.getString("preferenceValue", "No preference found.");
+
         TextView prefTextRef = findViewById(R.id.prefText);
         String preferenceValue = myPreferenceRef.getString("MyAppPreferenceString", "No preference found.");
         prefTextRef.setText(preferenceValue);
